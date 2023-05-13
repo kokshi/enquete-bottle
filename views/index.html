@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>アンケート</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <div class="box_con">
+        <form method="post" action="enquates" onsubmit="return beforeSubmit()">
+            <table class="formTable">
+                <tr>
+                    <th>指摘する場所<br /></th>
+                    <td><input size="20" type="text" id="topic" name="topic" /></td>
+                </tr>
+                <tr>
+                    <th>指摘の内容<br /></th>
+                    <td><textarea name="content" id="content" cols="50" rows="5"></textarea></td>
+                </tr>
+            </table>
+            <p class="btn">
+                <span><input type="submit" value="　 送信 　" /></span>
+            </p>
+        </form>
+    </div>
+</body>
+
+<script>
+    function beforeSubmit() {
+        if (window.confirm('この内容で送信しますがよろしいでしょうか？')) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>
+
+</html>

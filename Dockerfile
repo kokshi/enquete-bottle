@@ -7,4 +7,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD [ "python", "enquete_bottle/main.py" ]
+CMD [ "python", "main.py" ]
